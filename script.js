@@ -16,7 +16,7 @@ function createEmoji() {
 
     container.appendChild(emoji);
 
-    let speed = Math.random() * 2 + 1;
+    let speed = Math.random() * 3 + 1;
     let position = 0;
 
     function fall() {
@@ -34,7 +34,7 @@ function createEmoji() {
 
 function clickCloud () {
     if (!intervalid) {
-        intervalid = setInterval(createEmoji, 300);
+        intervalid = setInterval(createEmoji, 100);
     } else {
         clearInterval(intervalid);
         intervalid = null;
