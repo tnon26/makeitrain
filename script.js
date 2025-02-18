@@ -16,7 +16,7 @@ function createEmoji() {
 
     container.appendChild(emoji);
 
-    let speed = Math.random() * 3 + 1;
+    let speed = Math.random() * 4 + 1;
     let position = 0;
 
     function fall() {
