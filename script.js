@@ -7,7 +7,7 @@ let intervalid = null;
 
 function createEmoji() {
     const emoji = document.createElement("span");
-    emoji.innerText = rainEmoji[Math.floor(Math.random() * rainEmoji.length)];
+    emoji.innerText = rainEmoji;
 
     emoji.style.position = "absolute";
     emoji.style.fontSize = "24px";
@@ -33,7 +33,7 @@ function createEmoji() {
 }
 
 function clickCloud () {
-    if (!intervalid) {
+    if (intervalid === null) {
         intervalid = setInterval(createEmoji, 100);
     } else {
         clearInterval(intervalid);
