@@ -2,7 +2,7 @@ const container = document.getElementById("rain");
 
 const rainEmoji = ["💧"];
 
-let intervalid = null;
+let intervalId = null;
 
 
 function createEmoji() {
@@ -33,11 +33,11 @@ function createEmoji() {
 }
 
 function clickCloud () {
-    if (intervalid === null) {
-        intervalid = setInterval(createEmoji, 100);
+    if (intervalId === null) {
+        intervalId = setInterval(createEmoji, 100);
     } else {
-        clearInterval(intervalid);
-        intervalid = null;
+        clearInterval(intervalId);
+        intervalId = null;
     }
 }
 
